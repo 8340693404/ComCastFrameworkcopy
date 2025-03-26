@@ -21,6 +21,7 @@ public class SearchTest {
 		driver.findElement(By.xpath("//input[@type='submit']")).click();
 		Reporter.log("search test case completed");
 		driver.quit();
+		System.out.println("hiii");
 		
 		
 	}
