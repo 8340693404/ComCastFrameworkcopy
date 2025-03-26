@@ -20,7 +20,8 @@ public class SearchTest {
 		driver.findElement(By.id("small-searchterms")).sendKeys("computers");
 		driver.findElement(By.xpath("//input[@type='submit']")).click();
 		Reporter.log("search test case completed");
-		driver.close();
+		driver.quit();
+		
 		
 	}
 
