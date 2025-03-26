@@ -11,15 +11,15 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class Working_With_Explicit_Wait {
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		WebDriver driver =new ChromeDriver();
-		driver.manage().window().maximize();
-		driver.get("https://demowebshop.tricentis.com/");
-		WebElement searchtxt =driver.findElement(By.id("small-searchterms"));
-		WebDriverWait wait=new WebDriverWait(driver,Duration.ofSeconds(15));
-		wait.until(ExpectedConditions.elementToBeClickable(searchtxt));
+    public static void main(String[] args) {
+        // TODO Auto-generated method stub
+        WebDriver driver = new ChromeDriver();
+        driver.manage().window().maximize();
+        driver.get("https://demowebshop.tricentis.com/");
+        WebElement searchtxt = driver.findElement(By.id("small-searchterms"));
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
+        wait.until(ExpectedConditions.elementToBeClickable(searchtxt));
 
-	}
+    }
 
 }

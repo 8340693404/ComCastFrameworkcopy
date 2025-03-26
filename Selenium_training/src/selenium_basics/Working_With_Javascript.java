@@ -8,14 +8,14 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class Working_With_Javascript {
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+    public static void main(String[] args) {
+        // TODO Auto-generated method stub
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
         driver.get("https://demowebshop.tricentis.com/");
-        JavascriptExecutor js=(JavascriptExecutor) driver;
+        JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("document.getElementById('small-searchterms').value='mobiles';");
-	}
+    }
 
 }
