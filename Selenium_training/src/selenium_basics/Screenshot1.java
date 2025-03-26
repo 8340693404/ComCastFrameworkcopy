@@ -13,22 +13,21 @@ import org.openqa.selenium.io.FileHandler;
 
 public class Screenshot1 {
 
-	public static void main(String[] args) throws Throwable {
-		// TODO Auto-generated method stub
-		WebDriver driver =new ChromeDriver();
-		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
-		driver.get("https://demowebshop.tricentis.com/");
-		TakesScreenshot ts=(TakesScreenshot)driver;
-		driver.findElement(By.id("small-searchterms")).sendKeys("mobiles");
-		driver.findElement(By.xpath("//input[@type='submit']")).click();
-		File srcfile=ts.getScreenshotAs(OutputType.FILE);
-		File destfile=new File("./screenShots/Homepage.png");
-		FileHandler.copy(srcfile, destfile);
-		driver.close();
-		
-		
+    public static void main(String[] args) throws Throwable {
+        // TODO Auto-generated method stub
+        WebDriver driver = new ChromeDriver();
+        driver.manage().window().maximize();
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
+        driver.get("https://demowebshop.tricentis.com/");
+        TakesScreenshot ts = (TakesScreenshot) driver;
+        driver.findElement(By.id("small-searchterms")).sendKeys("mobiles");
+        driver.findElement(By.xpath("//input[@type='submit']")).click();
+        File srcfile = ts.getScreenshotAs(OutputType.FILE);
+        File destfile = new File("./screenShots/Homepage.png");
+        FileHandler.copy(srcfile, destfile);
+        driver.close();
 
-	}
+
+    }
 
 }
