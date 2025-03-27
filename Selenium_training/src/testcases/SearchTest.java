@@ -19,9 +19,15 @@ public class SearchTest {
         driver.findElement(By.id("small-searchterms")).sendKeys("computers");
         driver.findElement(By.xpath("//input[@type='submit']")).click();
         Reporter.log("search test case completed");
-        driver.close();
+		driver.quit();
         System.out.println("executed");
         System.out.println("2nd exectuion");
         System.out.println("5th attempt");
     }
+
+        System.out.println("hiii");
+        System.out.println("bye");
+
+    }
+	
 }
