@@ -23,8 +23,6 @@ public class SearchTest {
         System.out.println("executed");
         System.out.println("2nd exectuion");
         System.out.println("5th attempt");
-    }
-
         System.out.println("hiii");
         System.out.println("bye");
 
