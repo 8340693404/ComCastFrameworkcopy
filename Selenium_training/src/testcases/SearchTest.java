@@ -21,7 +21,7 @@ public class SearchTest {
         Reporter.log("search test case completed");
         driver.close();
         System.out.println("executed");
-
+        System.out.println("2nd exectuion");
     }
 
 }
