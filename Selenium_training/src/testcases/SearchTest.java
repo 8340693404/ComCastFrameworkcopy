@@ -22,5 +22,6 @@ public class SearchTest {
         driver.close();
         System.out.println("executed");
         System.out.println("2nd exectuion");
+        System.out.println("3rd attempt");
     }
 }
