@@ -25,6 +25,7 @@ public class SearchTest {
         System.out.println("5th attempt");
         System.out.println("hiii");
         System.out.println("bye");
+        System.out.println("tek pyramid");
 
     }
 	
