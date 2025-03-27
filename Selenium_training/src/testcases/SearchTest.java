@@ -21,6 +21,10 @@ public class SearchTest {
         Reporter.log("search test case completed");
 		driver.quit();
         System.out.println("executed");
+        System.out.println("2nd exectuion");
+        System.out.println("4th attempt");
+    }
+
         System.out.println("hiii");
         System.out.println("bye");
 
